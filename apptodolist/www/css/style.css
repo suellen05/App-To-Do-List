@@ -1,0 +1,117 @@
+  ul {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Style the list items */
+  ul li {
+    cursor: pointer;
+    position: relative;
+    padding: 12px 8px 12px 40px;
+    background: #99b9c0;
+    font-size: 18px;
+    transition: 0.2s;
+  
+    /* make the list items unselectable */
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  /* Set all odd list items to a different color (zebra-stripes) */
+  ul li:nth-child(odd) {
+      background: #fbe9c7;
+  }
+  /* Darker background-color on hover */
+  /* ul li:hover {
+    background: #a5bdc2;
+} */
+  
+  /* When clicked on, add a background color and strike out text */
+  ul li.checked {
+    background: #72b084;
+    color: #fff;
+    text-decoration: line-through;
+  }
+  
+  /* Add a "checked" mark when clicked on */
+  ul li.checked::before {
+    content: '';
+    position: absolute;
+    border-color: #fff;
+    border-style: solid;
+    border-width: 0 2px 2px 0;
+    top: 10px;
+    left: 16px;
+    transform: rotate(45deg);
+    height: 15px;
+    width: 7px;
+    
+  }
+  
+  /* Style the close button */
+  .close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 12px 16px 12px 16px;
+  }
+  
+  .close:hover {
+    background-color: #11092c;
+    color: rgb(52, 47, 61);
+  }
+  
+  /* Style the header */
+  .header {
+    background-color: hsl(202, 81%, 70%);
+    padding: 30px 40px;
+    color: #240011;
+    text-align: center;
+}
+  
+  /* Clear floats after the header */
+  .header:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Style the input */
+  input {
+    margin: 0;
+    border: none;
+    border-radius: 25px;
+    /* width: 100%;  */
+    padding: 0px;
+    float: left;
+    font-size: 20px;
+  }
+  
+  /* Style the "Add" button */
+  .addBtn {
+    padding: 10px;
+    /* width: 100%;  */
+    background: #076db8;
+    color: white;
+    float: left;
+    text-align: center;
+    font-size: 25px;
+    cursor: pointer;
+    transition: 0.6s;
+    border-radius: 85px;
+}
+  .addBtn:hover {
+    background-color: #001524;
+  }
+ 
+  input#myInput {
+    outline: none !important;
+    background: #e7f2ff;
+}
+
+ul#myUL {
+  margin-left: 20px;
+  margin-right: 30px;
+}
